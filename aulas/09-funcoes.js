@@ -30,14 +30,8 @@ bomDia();
 
 function apresentarPessoa(nome, idade, cidade) {
   console.log(
-    "Apresento a vocês:",
-    nome,
-    " que tem",
-    idade,
-    "anos, e mora em",
-    cidade,
-    ".",
-  );
+    "Apresento a vocês:", nome," que tem", idade,
+    "anos, e mora em",  cidade,"." );
 }
 
 apresentarPessoa("José", 31, "Brotas");
