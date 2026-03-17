@@ -73,3 +73,10 @@ console.table(dinos);
 dinos[1] = "Anquilossauro";
 console.table(dinos);
 
+
+// slice -> criar uma copia do vetor
+let novalista = dinos.slice(); // copia completa do vetor dinos
+console.table(novalista)
+
+let listaParcial = dinos.slice(1, 3); // Cria uma cópia do vetor dinos a partir do indice onde começa e onde termina a copia
+console.table(listaParcial);
