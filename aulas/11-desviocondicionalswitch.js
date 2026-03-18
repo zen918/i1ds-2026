@@ -36,5 +36,6 @@ switch (menuSelecionado) {
 
 const pi = 3.1415683
 
-con
+console.log(pi)
+console.log(pi.toFixed(2))
 
