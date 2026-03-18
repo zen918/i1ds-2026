@@ -78,8 +78,8 @@ console.log(
 /***************************************************************/
 // IF Ternário (IF Inline)
 let preco = 500;
-let resultado = (preco <= 100) ? "Tá barato" : "Vish, ta caro!";
-console.log("Preço:",preco, "-", resultado);
+let resultado = preco <= 100 ? "Tá barato" : "Vish, ta caro!";
+console.log("Preço:", preco, "-", resultado);
 // O codigo acima, faz exatamente a mesma coisa que o código abaixo
 
 if (preco <= 100) {
@@ -87,6 +87,6 @@ if (preco <= 100) {
 } else {
   resultado = "Vish, ta caro!";
 }
-console.log("Preço:",preco, "-", resultado);
+console.log("Preço:", preco, "-", resultado);
 
 /***************************************************************/
