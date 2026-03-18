@@ -33,3 +33,8 @@ switch (menuSelecionado) {
     break;
 }
 
+
+const pi = 3.1415683
+
+con
+

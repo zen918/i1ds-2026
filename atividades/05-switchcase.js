@@ -17,4 +17,42 @@ Mês                     Trimestre
 7, 8, 9                 Terceiro trimestre
 10, 11, 12              Quarto trimestre
 */
+let mes = 11;
+
+
+switch (mes) {
+  case 1:
+  case 2:
+  case 3:
+    console.log("Primeiro trimestre!");
+    break;
+
+
+  case 4:
+  case 5:
+  case 6:
+    console.log("Segundo trimestre!");
+    break;
+    
+  case 7:
+  case 8:
+  case 9:
+    console.log("Terceiro trimestre!");
+    break;
+
+
+  case 10:
+  case 11:
+  case 12:
+    console.log("Quarto trimestre!");
+    break;
+
+
+  default:
+    console.log("Mês incorreto!");
+    break;
+}
+
+
+
 
