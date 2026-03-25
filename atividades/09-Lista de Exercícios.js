@@ -42,6 +42,10 @@ console.log("-------------------------------------------------------------------
 
 let valor = 100
 let desconto = 10/100
+let valorfinal = valor -(valor*desconto)
+ console.log ("valor do produto é de", valor)
+ console.log ("alicando desconto de", desconto,"%")
+ console.log ("total da compra é de", valorfinal)
 
 
 
