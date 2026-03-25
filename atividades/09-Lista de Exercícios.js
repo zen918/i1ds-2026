@@ -46,6 +46,13 @@ let valorfinal = valor -(valor*desconto)
  console.log ("valor do produto é de", valor)
  console.log ("alicando desconto de", desconto,"%")
  console.log ("total da compra é de", valorfinal)
+console.log("-------------------------------------------------------------------------")
+
+let celcius = 20
+let fahrenheit = celcius * 1.8 + 32
+
+console.log (celcius,"graus celcius é igual a", fahrenheit,"graus fahrenheit")
+console.log("-------------------------------------------------------------------------")
 
 
 
