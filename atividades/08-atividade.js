@@ -30,17 +30,20 @@ console.log(matriz[0][2]);
 console.log(matriz[1][1]);
 console.log(matriz[2][0]);
 
-console.log("-------------------------------------------------------------")
+console.log("-------------------------------------------------------------");
 
 var matriz1 = [
   [8, 1, 3],
   [2, 9, 1],
   [4, 6, 2],
 ];
+let x = 4
+
 console.table(matriz1);
 
-for (let i = 0; i < matriz1; i++) {
-  matriz1[i] *= 4; 
-}
-console.table(matriz1);
+for (let linha = 0; linha < matriz1.length; linha++) 
+  for (let coluna = 0; coluna < matriz1[0].length; coluna++)
+    matriz1[linha][coluna]*= x;
 
+
+console.table(matriz1);
