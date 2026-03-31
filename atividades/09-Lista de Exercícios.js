@@ -18,10 +18,10 @@ console.log(
   "-------------------------------------------------------------------------",
 );
 
-let num1 = 45;
-let num2 = 5;
+var num1 = 45;
+var num2 = 5;
 
-let soma = num1 + num2;
+var soma = num1 + num2;
 var subtracao = num1 - num2;
 var multiplicacao = num1 * num2;
 var divisao = num1 / num2;
@@ -113,6 +113,14 @@ console.log(
   "---------------------------------------------------------------------------------",
 );
 
+
+var a = 1;
+var b = -5;
+var c = 6;
+
+var delta = (b ** 2) - (4 * a * c);
+
+console.log("O valor de Delta é: " + delta); 
 console.log(
   "-------------------------------------------------------------------------",
 );
@@ -125,4 +133,92 @@ console.log(hora, "horas é igua á", minutos, "min");
 console.log(hora, "horas é igua á", segundos, "seg");
 
 console.log("/---------------------------------parte 02---------------------------------/");
+var num = -5;
+var num1 = 0;
+var num2 = 5;
+
+
+if (num > 0) {
+    console.log("Positivo");
+} else if (num < 0) {
+    console.log("Negativo");
+} else {
+    console.log("Zero");
+}
+
+if (num1 > 0) {
+    console.log("Positivo");
+} else if (num1 < 0) {
+    console.log("Negativo");
+} else {
+    console.log("Zero");
+}
+
+if (num2 > 0) {
+    console.log("Positivo");
+} else if (num2 < 0) {
+    console.log("Negativo");
+} else {
+    console.log("Zero");
+}
+console.log("----------------------------------------------------------------------")
+
+var numero = 10;
+var numero1 = 9;
+
+
+if (numero % 2 === 0) {
+    console.log(numero + " é Par");
+} else {
+    console.log(numero + " é Ímpar");
+}
+
+if (numero % 3 === 0) {
+    console.log(numero1 + " é Par");
+} else {
+    console.log(numero1 + " é Ímpar");
+}
+console.log("----------------------------------------------------------------------")
+
+var num = 12;
+var num1 = 4
+
+if (num % 3 === 0) {
+  console.log(num + " é múltiplo de 3.");
+} else {
+  console.log(num + " não é múltiplo de 3.");
+}
+
+if (num1 % 3 === 0) {
+  console.log(num1 + " é múltiplo de 3.");
+} else {
+  console.log(num1 + " não é múltiplo de 3.");
+}
+console.log("----------------------------------------------------------------------")
+
+function recuperação(nota) {
+  let frase;
+  if (nota < 5) {
+    frase = "reprovado";
+  } else if (nota >= 5 && nota <= 6) {
+    frase = "recuperação";
+  } else {
+    frase = "aprovado";
+  }
+  return frase;
+}
+var idade = 4;
+console.log("Idade:", idade, "-", recuperação(idade));
+idade = 6;
+console.log("Idade:", idade, "-", recuperação(idade));
+idade = 7;
+console.log("Idade:", idade, "-", recuperação(idade));
+idade = 10;
+console.log("Idade:", idade, "-", recuperação(idade));
+console.log("----------------------------------------------------------------------")
+
+
+
+
+
 
