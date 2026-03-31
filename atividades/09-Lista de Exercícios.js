@@ -629,7 +629,7 @@ console.log("/---------------------------------parte 06-------------------------
 
 
 
-const matriz = [
+var matriz = [
     [1, 2, 3], 
     [4, 5, 6], 
     [7, 8, 9]  
@@ -656,7 +656,7 @@ for (var i = 0; i < matriz.length; i++) {
   console.log(matriz[i][i]);
 }
 console.log("----------------------------------------------------------------------")
-const n = matriz.length;
+var n = matriz.length;
 console.log("Diagonal Secundária:");
 
 for (var i = 0; i < n; i++) {
@@ -670,3 +670,51 @@ for (var i = 0; i < matriz.length; i++) {
     soma += matriz[i][j];
   }
 }
+console.log("----------------------------------------------------------------------")
+//46
+var soma = 0;
+for (var i = 0; i < matriz.length; i++) {
+  for (var j = 0; j < matriz[i].length; j++) {
+    soma += matriz[i][j];
+  }
+}
+console.log("A soma é:", soma);
+
+var maiorValor = Math.max(...matriz.flat());
+
+console.log(maiorValor);
+
+console.log("----------------------------------------------------------------------")
+//47
+var maiorValor = Math.max(...matriz.flat());
+
+console.log(maiorValor);
+
+console.log("----------------------------------------------------------------------")
+//48
+var x = 9
+for (var i = 0; i < matriz.length; i++) {
+    // Percorre as colunas de cada linha
+    for (var j = 0; j < matriz[i].length; j++) {
+        matriz[i][j] *= x;
+    }
+}
+console.log(matriz);
+
+console.log("----------------------------------------------------------------------")
+//49
+var contador = 0;
+
+for (var i = 0; i < matriz.length; i++) {
+  for (var j = 0; j < matriz[i].length; j++) {
+    if (matriz[i][j] > 10) {
+      contador++;
+    }
+  }
+}
+
+console.log("Valores maiores que 10:", contador);
+
+console.log("----------------------------------------------------------------------")
+//50
+console.table(matriz);
