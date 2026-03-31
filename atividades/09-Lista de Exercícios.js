@@ -437,4 +437,261 @@ switch (operacoes) {
 }
 console.log("----------------------------------------------------------------------")
 
+ 
+function avaliarDesempenho(nota) {
+  
+    var notaMaiuscula = nota.toUpperCase(); 
+    var resultado;
+
+    switch (notaMaiuscula) {
+        case 'A':
+            resultado = 'Excelente';
+            break;
+        case 'B':
+            resultado = 'Bom';
+            break;
+        case 'C':
+            resultado = 'Regular';
+            break;
+        case 'D':
+            resultado = 'Ruim';
+            break;
+        default:
+            resultado = 'Nota inválida';
+    }
+
+    return resultado;
+}
+
+
+console.log(avaliarDesempenho('A')); 
+console.log(avaliarDesempenho('b')); 
+console.log(avaliarDesempenho('C')); 
+console.log(avaliarDesempenho('D')); 
+console.log(avaliarDesempenho('E')); 
+
+
+
+console.log("----------------------------------------------------------------------")
+console.log("/---------------------------------parte 04---------------------------------/");
+
+for (var i = 1; i <= 100; i++) {
+  console.log(i);
+}
+console.log("----------------------------------------------------------------------")
+
+for (var i = 100; i >= 1; i--) {
+  console.log(i);
+}
+console.log("----------------------------------------------------------------------")
+
+for (var i = 2; i <= 50; i += 2) {
+  console.log(i);
+}
+console.log("----------------------------------------------------------------------")
+
+for (var i = 1; i <= 50; i++) {
+  if (i % 2 !== 0) {
+    console.log(i);
+  }
+}
+
+console.log("----------------------------------------------------------------------")
+
+var soma = 0;
+for (var i = 1; i <= 100; i++) {
+  soma += i;
+}
+console.log(soma); 
+
+console.log("----------------------------------------------------------------------")
+function fatorialIterativo(num) {
+  if (num < 0) return -1; // Fatorial de número negativo não existe
+  if (num === 0 || num === 1) return 1;
+  
+  var resultado = 1;
+  for (var i = 2; i <= num; i++) {
+    resultado *= i;
+  }
+  return resultado;
+}
+
+console.log(fatorialIterativo(5)); 
+
+console.log("----------------------------------------------------------------------")
+
+var numero = 9; 
+
+console.log(`Tabuada do ${numero}:`);
+
+for (var i = 1; i <= 10; i++) {
+    console.log(`${numero} x ${i} = ${numero * i}`);
+}
+
+console.log("----------------------------------------------------------------------")
+
+var contador = 0;
+
+for (var i = 1; i <= 100; i++) {
+    if (i % 2 === 0) {
+        contador++;
+    }
+}
+
+console.log(contador); 
+
+console.log("----------------------------------------------------------------------")
+for (var i = 0; i <= 100; i += 5) {
+  console.log(i);
+}
+
+console.log("----------------------------------------------------------------------")
+for (var i = 1; i <= 5; i++) {
+  console.log('*'.repeat(i));
+}
+console.log("----------------------------------------------------------------------")
+console.log("/---------------------------------parte 05---------------------------------/");
+
+
+var numeros = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+
+console.log(numeros);
+
+
+for (var i = 0; i < numeros.length; i++) {
+    console.log(`Posição ${i}: ${numeros[i]}`);
+}
+console.log("----------------------------------------------------------------------")
+
+var soma = 0;
+for (var i = 0; i < numeros.length; i++) {
+    soma += numeros[i];
+}
+console.log (soma)
+console.log("----------------------------------------------------------------------")
+var soma = 0;
+
+for (var i = 0; i < numeros.length; i++) {
+    soma += numeros[i];
+}
+
+var media = soma / numeros.length;
+
+console.log("A média é:", media);
+
+console.log("----------------------------------------------------------------------")
+
+
+var maior = numeros[0]; 
+
+for (var i = 1; i < numeros.length; i++) {
+  if (numeros[i] > maior) {
+    maior = numeros[i];
+  }
+}
+console.log(maior); 
+
+console.log("----------------------------------------------------------------------")
+
+
+var menor = numeros[0];
+for (var i = 1; i < numeros.length; i++) {
+    if (numeros[i] < menor) {
+        menor = numeros[i];
+    }
+}
+console.log(menor); 
+
+console.log("----------------------------------------------------------------------")
+var pares = 0;
+var impares = 0;
+
+for (var num of numeros) {
+    if (num % 2 === 0) {
+        pares++;
+    } else {
+        impares++; 
+    }
+}
+
+console.log(`Pares: ${pares}`);   
+console.log(`Ímpares: ${impares}`); 
+
+console.log("----------------------------------------------------------------------")
+for (var i = 0; i < numeros.length; i++) {
+    numeros[i] = numeros[i] * 2;
+}
+console.log (numeros)
+
+console.log("----------------------------------------------------------------------")
+console.log("/---------------------------------parte 06---------------------------------/");
+
+
+
+const matriz = [
+    [1, 2, 3], 
+    [4, 5, 6], 
+    [7, 8, 9]  
+];
+
+
+console.log("Valores da Matriz 3x3:");
+
+
+for (var i = 0; i < matriz.length; i++) {
+    
+    for (var j = 0; j < matriz[i].length; j++) {
+        console.log(`Linha ${i}, Coluna ${j}: ${matriz[i][j]}`);
+    }
+}
+
+
+console.table(matriz);
+console.log("----------------------------------------------------------------------")
+
+console.log("Diagonal Principal:");
+for (var i = 0; i < matriz.length; i++) {
+  
+  console.log(matriz[i][i]);
+}
+console.log("----------------------------------------------------------------------")
+const n = matriz.length;
+console.log("Diagonal Secundária:");
+
+for (var i = 0; i < n; i++) {
+  
+  console.log(matriz[i][n - 1 - i]);
+}
+console.log("----------------------------------------------------------------------")
+var soma = 0;
+for (var i = 0; i < matriz.length; i++) {
+  for (var j = 0; j < matriz[i].length; j++) {
+    soma += matriz[i][j];
+  }
+}
+console.log("A soma é:", soma);
+console.log("----------------------------------------------------------------------")
+let max = numeros[0];
+for (let i = 1; i < numeros.length; i++) {
+    if (numeros[i] > max) max = numeros[i];
+}
+
+console.log("----------------------------------------------------------------------")
+
+console.log("----------------------------------------------------------------------")
+
+console.log("----------------------------------------------------------------------")
+
+
+
+
+
+
+
+
+
+
+
+
 
