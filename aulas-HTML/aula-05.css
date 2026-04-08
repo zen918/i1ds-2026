@@ -11,4 +11,5 @@ body {
       font-size: 16px; /* tamanho da fonte */
       margin: 0px; /* espaçamento externo ao box */
       padding: 0px; /* espaçamento interno ao box */
+      text-align: center;
 }
