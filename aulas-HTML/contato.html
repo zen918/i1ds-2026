@@ -27,11 +27,48 @@
             <input type="email" name="email" placeholder="Digite seu E-mail..." />
             <br />
 
-            <label for="cpf">CPF</label>
-            <input type="number" name="cpf" placeholder="Digite seu CPF..." />
+            <label for="datanascimento">data de nascimento</label>
+            <input type="data" name="datanascimento" />
             <br />
 
+            <label for="datacadastro">data de Cadastro</label>
+            <input type="datetime-local" name="datacadastro" />
+            <br />
+
+            <input type="checkbox" name="escolasesi" />
+             <label for="escolasesi">SESI</label>
+             <input type="checkbox" name="escolasenai" />
+             <label for="escolasesi">SENAI</label>
+             <input type="checkbox" name="escola" />
+             <label for="escolasesi">NENHUMA</label>
+             <input type="checkbox" name="todas" />
+             <label for="todas">TODAS AS ANTERIORES</label>
+            <br />
+
+            <input type="radio" name="sexo" />
+             <label for="sexo">masculino</label>
+             <input type="radio" name="sexo" />
+             <label for="sexo">feminino</label>
+             <input type="radio" name="sexo" />
+             <label for="sexo">prefiro não informar</label>
+            <br />
+
+             <label for="Curso">escolha seu Curso </label>
+             <select name="Curso">
+                <option value="0">HTML</option>
+                <option value="1">CSS</option>
+                <option value="2">javascript</option>
+             </select>
+            <br />
+
+             <label for="Comentários">Comentários </label>
+
+            
         </fieldset>
+             <legend></legend>
+
+        </fieldset>
+
 
         <button type="submit">Enviar Dados</button>
         <button type="reset">Limpar o Fomulário</button>
