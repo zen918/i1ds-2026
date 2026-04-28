@@ -1,3 +1,6 @@
+let usercount
+
+
 const cadastrar = (event) => {
   // Parar a propagação padrão do evento
   event.preventDefault();
@@ -6,6 +9,15 @@ const cadastrar = (event) => {
   let email = document.getElementById("email").value;
   // Capturando o elemento de lista por Id
   let lista = document.getElementById("lista");
+ 
+  usercount ++
+  let id = usercount
+  let novoItem = document.creat
+
+
+
+
+
   // Criar um novo elemento <li>Nome - Email</li>
   let novoItem = document.createElement("li");
   novoItem.innerText = nome + " - " + email;
@@ -14,4 +26,5 @@ const cadastrar = (event) => {
   // Limpar os campos
   document.getElementById("nome").value = "";
   document.getElementById("email").value = "";
+  
 };
