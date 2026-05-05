@@ -39,3 +39,33 @@ for (let i = 0; i < numeros.length; i++) {
   soma += numeros[i];
 }
 console.log(soma);
+
+//LAÇO DE REPETIÇAO - WHILE / DO WHILE
+//----------------------------------------------------
+//WHILE TESTA A CONDIÇAO ANTES DE ENTRAR NO LAÇO DE REPETIÇAO
+//SE A CONDIÇAO FOR INICIALMENTE FALSA, O LAÇO NAO É EXECUTADO NENHUMA VEZ
+
+
+var x = 10;
+
+while (x > 10) {
+  console.log("Entrei no laço While...");
+  x = 0;
+}
+console.log("Terminei!");
+//----------------------------------------------------
+console.log("-----------------------------");
+
+//SOMAR ENQUANTO (WHILE) MENOR QUE 10
+var somar = 0;    //VARIAVEL PARA ARMAZENAR A SOMA DOS NUMEROS
+var num = 0;     //VARIAVEL PARA AUMENTAR DE 1 EM 1
+
+while (num < 10) {
+  somar += num;
+  num++;
+  console.log('Somando...',somar);
+  console.log('Numero...',num);
+}
+
+
+
